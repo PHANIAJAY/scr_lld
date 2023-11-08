@@ -1,0 +1,36 @@
+SOLID :
+
+1. The Single Responsibility Principle (SRP) states that there should never be
+more than one reason for a class to change.
+
+2.The Open-Closed Principle (OCP) states that classes should be open for extension but closed for modification. “Open to extension” means that you should design your classes so that new functionality can be added as new requirements are generated. “Closed for modification” means
+that once you have developed a class you should never modify it, except to correct bugs.
+
+3.The Liskov Substitution Principle (LSP) applies to inheritance hierarchies, specifying that you should design your classes so that client dependencies
+can be substituted with subclasses without the client knowing about the change.
+
+Class B is subtype of class of A,then we should be able to
+ replace object of A with B without breaking the behaviour of thr program.
+
+
+ In the Bike example the Cycle shows the change in turnonengine method hence its narrowing the parrent
+ quality instead it should extend the parent quality .
+
+ note :The subclass shd extend the capability of parent class not narrow it down;
+
+ 4.The Interface Segregation Principle (ISP) states that clients should not be forced to
+ depend upon interface members they do not use.
+
+here the restaurantemployee_Int interface has a unusual methods tht waiter cant follow and helper,chef cant follow
+hence break them into individual segments like chefinterface, waiterinterface so tht they have respective wrk to be matched and done
+
+5.The Dependency Inversion Principle (DIP) states that high-level
+modules should not depend upon low-level modules; they should depend on abstractions.
+
+class shd depend on Interface rather than the concrete classes.
+
+Keyborad --1)wired Keyborad, 2)blutooth Keyborad
+
+mouse--1)wired mouse, 2)blutooth mouse
+
+dont use the concrete classes instaed follow the interface object;
